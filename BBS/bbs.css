@@ -1,0 +1,27 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a:hover {
+    font-size: 120%;
+    text-decoration: none;
+}
+
+a:link {
+    color: white;
+    text-decoration: none;
+}
+
+a:active {
+    color: white;
+}
+
+a:visited {
+    color: white;
+    text-decoration: none;
+}
+
+.box {
+    padding-top: 5px;
+}

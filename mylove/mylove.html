@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <title>what tay like</title>
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="swiper.css">
+    <!-- Demo styles -->
+    <style>
+        body {
+            background: #eee;
+            font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+            font-size: 14px;
+            color: #000;
+            margin: 0;
+            padding: 0;
+        }
+        
+        #banner {
+            width: 100%;
+            height: 523px;
+            overflow: hidden;
+            position: relative;
+        }
+        
+        .swiper-container {
+            width: 1750px;
+            height: 523px;
+            position: absolute;
+            left: -875px;
+            margin-left: 50%;
+        }
+        
+        .swiper-slide .detail {
+            height: 90px;
+            background: rgba(0, 0, 0, .7);
+            position: absolute;
+            width: 100%;
+            bottom: 0;
+            color: #fff;
+            opacity: 0;
+            transition: opacity .3s .3s;
+        }
+        
+        .swiper-slide-active .detail {
+            opacity: 1;
+        }
+        
+        .swiper-slide .detail h3 {
+            width: 950px;
+            margin: 15px auto 0;
+        }
+        
+        .swiper-slide .detail p {
+            width: 950px;
+            margin: 5px auto 0;
+        }
+        
+        .swiper-slide .detail p span {
+            width: 650px;
+            display: block;
+        }
+        /**/
+        
+        .effect1 img {
+            transform: scale(1.25, 1.25) translate(10%, 10%);
+            transform: scale(1.1, 1.1) translate(4.545%, 4.545%);
+            /*tr     =    (sc-1)/2sc*100%              */
+            /* --1.25       0.25/2.5*100%=10%          */
+        }
+        
+        .leftUp img {
+            -webkit-animation-name: leftUp;
+            animation-name: leftUp;
+        }
+        
+        @-webkit-keyframes leftUp {
+            0% {
+                transform: scale(1.1, 1.1) translate(4.545%, 4.545%);
+            }
+            100% {
+                transform: scale(1.1, 1.1) translate(-4.545%, -4.545%);
+            }
+        }
+        
+        @keyframes leftUp {
+            0% {
+                transform: scale(1.1, 1.1) translate(4.545%, 4.545%);
+            }
+            100% {
+                transform: scale(1.1, 1.1) translate(-4.545%, -4.545%);
+            }
+        }
+        
+        .moveRight img {
+            -webkit-animation-name: moveRight;
+            animation-name: moveRight;
+        }
+        
+        @-webkit-keyframes moveRight {
+            0% {
+                transform: scale(1.1, 1.1) translate(-4.545%, 0);
+            }
+            100% {
+                transform: scale(1.1, 1.1) translate(4.545%, 0);
+            }
+        }
+        
+        @keyframes moveRight {
+            0% {
+                transform: scale(1.1, 1.1) translate(-4.545%, 0);
+            }
+            100% {
+                transform: scale(1.1, 1.1) translate(4.545%, 0);
+            }
+        }
+        
+        .moveDown img {
+            -webkit-animation-name: moveDown;
+            animation-name: moveDown;
+        }
+        
+        @-webkit-keyframes moveDown {
+            0% {
+                transform: scale(1.1, 1.1) translate(0, -4.545%);
+            }
+            100% {
+                transform: scale(1.1, 1.1) translate(0, 4.545%);
+            }
+        }
+        
+        @keyframes moveDown {
+            0% {
+                transform: scale(1.1, 1.1) translate(0, -4.545%);
+            }
+            100% {
+                transform: scale(1.1, 1.1) translate(0, 4.545%);
+            }
+        }
+        
+        .centerBig img {
+            -webkit-animation-name: centerBig;
+            animation-name: centerBig;
+        }
+        
+        @-webkit-keyframes centerBig {
+            100% {
+                transform: scale(1.1, 1.1);
+            }
+        }
+        
+        @keyframes centerBig {
+            100% {
+                transform: scale(1.1, 1.1);
+            }
+        }
+        
+        .rightDownBig img {
+            -webkit-animation-name: rightDownBig;
+            animation-name: rightDownBig;
+        }
+        
+        @-webkit-keyframes rightDownBig {
+            100% {
+                transform: scale(1.1, 1.1) translate(4%, 4%);
+            }
+        }
+        
+        @keyframes rightDownBig {
+            100% {
+                transform: scale(1.1, 1.1) translate(4%, 4%);
+            }
+        }
+        
+        .swiper-slide img {
+            animation-duration: 5s;
+            animation-timing-function: linear;
+            animation-fill-mode: forwards;
+            -webkit-animation-duration: 5s;
+            -webkit-animation-timing-function: linear;
+            -webkit-animation-fill-mode: forwards;
+        }
+        
+        .swiper-pagination {
+            bottom: 35px;
+            right: 250px;
+        }
+        
+        .swiper-pagination-bullet {
+            width: 20px;
+            height: 20px;
+            background: #fff;
+            margin: 0 5px;
+        }
+    </style>
+
+</head>
+
+<body>
+    <!-- Swiper -->
+    <div id="banner">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide rightDownBig"><img src="images/slide1.jpg" />
+                    <div class="detail">
+                        <h3>极限运动</h3>
+                        <p><span>喜欢有挑战性的事情，但可能不包括学习。对于攀岩、蹦极、跳伞......都充满期待。 </span></p>
+                    </div>
+                </div>
+                <div class="swiper-slide"><img src="images/slide2.jpg" />
+                    <div class="detail">
+                        <h3>摄影</h3>
+                        <p><span>喜欢拍照，摄像，比较起风景，更喜欢拍身边的人，风景可以用眼睛看，青山不老，红颜易逝，所以想要记下她们美好的样子，不过这张照片是五月在车站旁边拍的风景。</span></p>
+                    </div>
+                </div>
+                <div class="swiper-slide"><img src="images/slide3.jpg" />
+                    <div class="detail">
+                        <h3>自然</h3>
+                        <p><span>我喜欢森林，喜欢花草树木，嗯也很中药，对植物有莫名的喜欢，看见他们就很开心，觉得这个世界上，自然比人文更珍贵，没有树木，没有我们。 </span></p>
+                    </div>
+                </div>
+                <div class="swiper-slide"><img src="images/slide4.jpg" />
+                    <div class="detail">
+                        <h3>可爱的人</h3>
+                        <p><span>我家里有一个小侄女，这张照片让我想起她，为了保护她的隐私，便没有传她的照片，但我超爱她，也爱我身边可爱的人们，我的爹爹娘亲，哥哥姐姐，朋友们。 </span></p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+        <div class="swiper-pagination"></div>
+    </div>
+
+    <div class="circle">
+        <a href="https://baike.baidu.com/item/%E6%9E%81%E9%99%90%E8%BF%90%E5%8A%A8/24201">极限运动</a>
+        <a href="http://pp.163.com/square/">摄影</a>
+        <a href="https://www.baidu.com/link?url=_7nSIOBw9kGcLGUv0GXBnCzIuGxuCNTl3UE00L_WTCLWx0sb3HRrzbPCWbiMIuI8JxUwH3W980pX-2dUizNQeyXdEB9pU7cOrAtUKeKJZawPSg6KawD_8XeMeeM39nLZ&wd=&eqid=b9676980000323fa000000055afd1e5c">自然</a>
+        <a href="https://baike.baidu.com/item/%E5%8F%AF%E7%88%B1/282">可爱的人</a>
+    </div>
+    <!-- Swiper JS -->
+    <script src="swiper.js"></script>
+
+    <!-- Initialize Swiper -->
+    <script>
+        trList = ['leftUp', 'moveRight', 'moveDown', 'centerBig', 'rightDownBig'];
+        var swiper = new Swiper('.swiper-container', {
+            speed: 500,
+            autoplay: 4400,
+            autoplayDisableOnInteraction: false,
+            effect: 'fade',
+            pagination: '.swiper-pagination',
+            paginationClickable: true,
+            onSlideChangeStart: function(swiper) {
+                nextSlide = swiper.slides.eq(swiper.activeIndex);
+                nextSlide.addClass(trList[Math.floor(Math.random() * 5)]);
+            },
+            onSlideChangeEnd: function(swiper) {
+                prevSlide = swiper.slides[swiper.previousIndex];
+                prevSlide.className = "swiper-slide";
+            },
+        });
+    </script>
+    <embed src="images/valder.mp3 " hidden="true" autostart="true " loop="true " />
+</body>
+
+</html>
